@@ -4,13 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.1</Version>
     <Authors>gehongyan</Authors>
     <Company />
     <Product />
     <Description>A simple C# .NET TruckersMP API implementation https://stats.truckersmp.com/api</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
