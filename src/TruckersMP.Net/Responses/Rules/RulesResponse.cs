@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TruckersMP.Net.Responses.Rules
+namespace TruckersMP.Net
 {
     public class RulesResponse : TruckersMPResponseBase
     {

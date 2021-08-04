@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Responses.VTCs;
 
-namespace TruckersMP.Net.Requests.VTCs
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     List of specific VTC members

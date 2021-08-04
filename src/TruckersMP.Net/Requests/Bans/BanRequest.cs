@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Responses.Bans;
 
-namespace TruckersMP.Net.Requests.Bans
+namespace TruckersMP.Net
 {
     /// <summary>
     /// Latest 5 bans for a selected user

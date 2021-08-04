@@ -5,7 +5,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>gehongyan</Authors>
     <Company />
     <Product />
@@ -13,6 +13,8 @@
     <PackageProjectUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</PackageProjectUrl>
     <RepositoryUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Combined namespaces</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +23,13 @@
 
   <ItemGroup>
     <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

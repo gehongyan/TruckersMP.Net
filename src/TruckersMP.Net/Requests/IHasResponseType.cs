@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace TruckersMP.Net.Requests
+namespace TruckersMP.Net
 {
     public interface IRequestHasNoParams<TResponse>
     {

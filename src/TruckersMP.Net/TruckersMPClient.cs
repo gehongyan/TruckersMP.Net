@@ -1,18 +1,4 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Requests.Bans;
-using TruckersMP.Net.Requests.Events;
-using TruckersMP.Net.Requests.Players;
-using TruckersMP.Net.Requests.Rules;
-using TruckersMP.Net.Requests.Servers;
-using TruckersMP.Net.Requests.Versions;
-using TruckersMP.Net.Requests.VTCs;
-using TruckersMP.Net.Responses.Bans;
-using TruckersMP.Net.Responses.Events;
-using TruckersMP.Net.Responses.Players;
-using TruckersMP.Net.Responses.Rules;
-using TruckersMP.Net.Responses.Servers;
-using TruckersMP.Net.Responses.Versions;
-using TruckersMP.Net.Responses.VTCs;
 
 namespace TruckersMP.Net
 {

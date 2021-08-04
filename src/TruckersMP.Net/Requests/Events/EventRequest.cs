@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Responses.Events;
 
-namespace TruckersMP.Net.Requests.Events
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     Specific event information

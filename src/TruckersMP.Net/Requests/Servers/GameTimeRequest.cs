@@ -1,8 +1,7 @@
 ﻿using System.Threading.Tasks;
 using TruckersMP.Net.Exceptions;
-using TruckersMP.Net.Responses.Servers;
 
-namespace TruckersMP.Net.Requests.Servers
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     The current in-game time.

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace TruckersMP.Net.Responses.VTCs
+namespace TruckersMP.Net
 {
     public class Role
     {

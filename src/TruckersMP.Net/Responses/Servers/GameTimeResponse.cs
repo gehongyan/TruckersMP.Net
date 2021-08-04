@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TruckersMP.Net.Responses.Servers
+namespace TruckersMP.Net
 {
     public class GameTimeResponse : TruckersMPResponseBase
     {

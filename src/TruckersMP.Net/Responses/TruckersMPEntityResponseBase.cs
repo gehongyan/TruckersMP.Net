@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TruckersMP.Net.Responses
+namespace TruckersMP.Net
 {
     public class TruckersMPEntityResponseBase<T> : TruckersMPResponseBase
     {

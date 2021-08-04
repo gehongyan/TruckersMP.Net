@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Responses.Events;
 
-namespace TruckersMP.Net.Requests.Events
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     List of available TruckersMP servers and their status

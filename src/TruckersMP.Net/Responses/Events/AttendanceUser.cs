@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace TruckersMP.Net.Responses.Events
+namespace TruckersMP.Net
 {
     public class AttendanceUser : User
     {

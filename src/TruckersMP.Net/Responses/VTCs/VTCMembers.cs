@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TruckersMP.Net.Responses.VTCs
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     List of specific VTC members

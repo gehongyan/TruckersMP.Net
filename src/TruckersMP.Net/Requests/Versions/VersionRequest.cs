@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Responses.Versions;
 
-namespace TruckersMP.Net.Requests.Versions
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     Information about the current TruckersMP version for ETS2 and ATS

@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Responses.Events;
 
-namespace TruckersMP.Net.Requests.VTCs
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     List of specific VTC events

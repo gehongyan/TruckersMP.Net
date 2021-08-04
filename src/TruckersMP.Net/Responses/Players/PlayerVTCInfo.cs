@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TruckersMP.Net.Responses.Players
+namespace TruckersMP.Net
 {
     public class PlayerVTCInfo
     {

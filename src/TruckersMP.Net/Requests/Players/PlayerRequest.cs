@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using TruckersMP.Net.Responses.Players;
 
-namespace TruckersMP.Net.Requests.Players
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     Lookup player information

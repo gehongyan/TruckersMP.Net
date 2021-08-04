@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace TruckersMP.Net.Responses.VTCs
+namespace TruckersMP.Net
 {
     public class NewsPostSimple
     {

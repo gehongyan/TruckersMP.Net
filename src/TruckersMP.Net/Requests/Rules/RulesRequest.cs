@@ -1,8 +1,7 @@
 ﻿using System.Threading.Tasks;
 using TruckersMP.Net.Exceptions;
-using TruckersMP.Net.Responses.Rules;
 
-namespace TruckersMP.Net.Requests.Rules
+namespace TruckersMP.Net
 {
     /// <summary>
     ///     Current in-game rules.

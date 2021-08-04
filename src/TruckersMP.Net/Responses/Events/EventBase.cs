@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TruckersMP.Net.Responses.Events
+namespace TruckersMP.Net
 {
     public class EventBase
     {

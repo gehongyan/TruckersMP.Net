@@ -4,9 +4,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using TruckersMP.Net.Exceptions;
-using TruckersMP.Net.Responses;
 
-namespace TruckersMP.Net.Requests
+namespace TruckersMP.Net
 {
     public abstract class TruckersMPRequestBase
     {
