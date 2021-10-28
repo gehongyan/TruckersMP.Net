@@ -1,4 +1,4 @@
-# TruckersMP-API-DotNet-Client
+# TruckersMP.Net
 
 <p align="center">
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/gehongyan/TruckersMP-API-DotNet-Client/dotnetTest?label=build&style=flat-square">
