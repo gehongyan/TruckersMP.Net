@@ -5,7 +5,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>gehongyan</Authors>
     <Company />
     <Product />
@@ -13,8 +13,9 @@
     <PackageProjectUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</PackageProjectUrl>
     <RepositoryUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Combined namespaces</PackageReleaseNotes>
+    <PackageReleaseNotes>Added VTC Members Banned API Support</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageVersion>1.0.3</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>

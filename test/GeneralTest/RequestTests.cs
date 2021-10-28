@@ -247,6 +247,31 @@ namespace GeneralTest
         }
 
         [Fact]
+        public async Task VTCMembersBannedTest()
+        {
+            VTCMembersBannedRequest vtcMembers = new();
+            VTCMembersBanned response = await vtcMembers.SendAsync(4);
+            Assert.NotNull(response);
+
+            response = await vtcMembers.SendAsync(7);
+            Assert.NotNull(response);
+
+            Assert.Equal(response.MembersBannedCount, response.Members.Length);
+
+            bool isError = false;
+            try
+            {
+                response = await vtcMembers.SendAsync(-1);
+            }
+            catch (PageNotFountException)
+            {
+                isError = true;
+            }
+            Assert.True(isError);
+
+        }
+
+        [Fact]
         public async Task VTCMemberInformationTest()
         {
             VTCMemberInformationRequest member = new();
