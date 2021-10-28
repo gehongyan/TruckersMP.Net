@@ -1,22 +1,17 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TruckersMP.Net
 {
     public class VTCIndex
     {
         [JsonProperty("recent")]
-        private VTCSimple[] _recent;
+        public IReadOnlyCollection<VTCSimple> Recent { get; init; }
 
         [JsonProperty("featured")]
-        private VTCSimple[] _featured;
+        public IReadOnlyCollection<VTCSimple> Featured { get; init; }
 
         [JsonProperty("featured_cover")]
-        private VTCSimple[] _featuredCover;
-
-        public VTCSimple[] Recent => _recent;
-
-        public VTCSimple[] Featured => _featured;
-
-        public VTCSimple[] FeaturedCover => _featuredCover;
+        public IReadOnlyCollection<VTCSimple> FeaturedCover { get; init; }
     }
 }

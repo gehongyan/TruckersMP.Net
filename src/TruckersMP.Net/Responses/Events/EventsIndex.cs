@@ -1,17 +1,17 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TruckersMP.Net
 {
     public class EventsIndex
     {
-        [JsonProperty("featured")] private readonly EventWithSimpleAttendances[] _featured;
-        [JsonProperty("today")] private readonly EventWithSimpleAttendances[] _today;
-        [JsonProperty("upcoming")] private readonly EventWithSimpleAttendances[] _upcoming;
+        [JsonProperty("featured")]
+        public IReadOnlyCollection<EventWithSimpleAttendances> Featured { get; init; }
 
-        public EventWithSimpleAttendances[] Featured => _featured;
+        [JsonProperty("today")]
+        public IReadOnlyCollection<EventWithSimpleAttendances> Today { get; init; }
 
-        public EventWithSimpleAttendances[] Today => _today;
-
-        public EventWithSimpleAttendances[] Upcoming => _upcoming;
+        [JsonProperty("upcoming")]
+        public IReadOnlyCollection<EventWithSimpleAttendances> Upcoming { get; init; }
     }
 }

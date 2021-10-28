@@ -1,20 +1,20 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TruckersMP.Net
 {
     public class Attendances
     {
-        [JsonProperty("confirmed")] private readonly int _confirmed;
-        [JsonProperty("unsure")] private readonly int _unsure;
-        [JsonProperty("confirmed_users")] private readonly AttendanceUser[] _confirmedUsers;
-        [JsonProperty("unsure_users")] private readonly AttendanceUser[] _unsureUsers;
+        [JsonProperty("confirmed")]
+        public int Confirmed { get; init; }
 
-        public int Confirmed => _confirmed;
+        [JsonProperty("unsure")]
+        public int Unsure { get; init; }
 
-        public int Unsure => _unsure;
+        [JsonProperty("confirmed_users")]
+        public IReadOnlyCollection<AttendanceUser> ConfirmedUsers { get; init; }
 
-        public AttendanceUser[] ConfirmedUsers => _confirmedUsers;
-
-        public AttendanceUser[] UnsureUsers => _unsureUsers;
+        [JsonProperty("unsure_users")]
+        public IReadOnlyCollection<AttendanceUser> UnsureUsers { get; init; }
     }
 }

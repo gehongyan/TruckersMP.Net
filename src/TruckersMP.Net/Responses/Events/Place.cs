@@ -4,11 +4,10 @@ namespace TruckersMP.Net
 {
     public class Place
     {
-        [JsonProperty("location")] private readonly string _location;
-        [JsonProperty("city")] private readonly string _city;
+        [JsonProperty("location")]
+        public string Location { get; init; }
 
-        public string Location => _location;
-
-        public string City => _city;
+        [JsonProperty("city")]
+        public string City { get; init; }
     }
 }

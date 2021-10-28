@@ -4,11 +4,10 @@ namespace TruckersMP.Net
 {
     public class EventType
     {
-        [JsonProperty("key")] private readonly string _key;
-        [JsonProperty("name")] private readonly string _name;
+        [JsonProperty("key")]
+        public string Key { get; init; }
 
-        public string Key => _key;
-
-        public string Name => _name;
+        [JsonProperty("name")]
+        public string Name { get; init; }
     }
 }

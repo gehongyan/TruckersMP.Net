@@ -5,28 +5,18 @@ namespace TruckersMP.Net
     public class Socials
     {
         [JsonProperty("twitter")]
-        private string _twitter;
+        public string Twitter { get; init; }
 
         [JsonProperty("facebook")]
-        private string _facebook;
+        public string Facebook { get; init; }
 
         [JsonProperty("twitch")]
-        private string _twitch;
+        public string Twitch { get; init; }
 
         [JsonProperty("discord")]
-        private string _discord;
+        public string Discord { get; init; }
 
         [JsonProperty("youtube")]
-        private string _youtube;
-
-        public string Twitter => _twitter;
-
-        public string Facebook => _facebook;
-
-        public string Twitch => _twitch;
-
-        public string Discord => _discord;
-
-        public string Youtube => _youtube;
+        public string Youtube { get; init; }
     }
 }

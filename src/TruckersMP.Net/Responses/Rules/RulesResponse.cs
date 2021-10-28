@@ -5,13 +5,9 @@ namespace TruckersMP.Net
     public class RulesResponse : TruckersMPResponseBase
     {
         [JsonProperty("rules")]
-        private readonly string _rules;
+        public string RulesContent { get; init; }
 
         [JsonProperty("revision")]
-        private readonly int _revision;
-
-        public string RulesContent => _rules;
-
-        public int Revision => _revision;
+        public int Revision { get; init; }
     }
 }

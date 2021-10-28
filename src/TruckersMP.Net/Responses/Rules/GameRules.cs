@@ -4,20 +4,16 @@ namespace TruckersMP.Net
 {
     public class GameRules
     {
-        [JsonProperty("rules")]
-        private readonly string _rules;
-
-        [JsonProperty("revision")]
-        private readonly int _revision;
-
         public GameRules(string rules, int revision)
         {
-            _rules = rules;
-            _revision = revision;
+            RulesContent = rules;
+            Revision = revision;
         }
 
-        public string RulesContent => _rules;
+        [JsonProperty("rules")]
+        public string RulesContent { get; init; }
 
-        public int Revision => _revision;
+        [JsonProperty("revision")]
+        public int Revision { get; init; }
     }
 }

@@ -5,59 +5,58 @@ namespace TruckersMP.Net
 {
     public class Player
     {
-        [JsonProperty("id")] private readonly int _id;
-        [JsonProperty("name")] private readonly string _name;
-        [JsonProperty("avatar")] private readonly string _avatar;
-        [JsonProperty("smallAvatar")] private readonly string _smallAvatar;
-        [JsonProperty("joinDate")] private readonly DateTime _joinDate;
-        [JsonProperty("steamID64")] private readonly long _steamId64;
-        [JsonProperty("steamID")] private readonly string _steamId;
-        [JsonProperty("discordSnowflake")] private readonly string _discordSnowflake;
-        [JsonProperty("groupName")] private readonly string _groupName;
-        [JsonProperty("groupColor")] private readonly string _groupColor;
-        [JsonProperty("groupID")] private readonly int _groupId;
-        [JsonProperty("banned")] private readonly bool _banned;
-        [JsonProperty("bannedUntil")] private readonly DateTime? _bannedUntil;
-        [JsonProperty("bansCount")] private readonly int? _bansCount;
-        [JsonProperty("displayBans")] private readonly bool _displayBans;
-        [JsonProperty("patreon")] private readonly Patreon _patreon;
-        [JsonProperty("permissions")] private readonly Permissions _permissions;
-        [JsonProperty("vtc")] private readonly PlayerVTCInfo _vtc;
+        [JsonProperty("id")]
+        public int Id { get; init; }
 
-        public int Id => _id;
+        [JsonProperty("name")]
+        public string Name { get; init; }
 
-        public string Name => _name;
+        [JsonProperty("avatar")]
+        public string Avatar { get; init; }
 
-        public string Avatar => _avatar;
+        [JsonProperty("smallAvatar")]
+        public string SmallAvatar { get; init; }
 
-        public string SmallAvatar => _smallAvatar;
+        [JsonProperty("joinDate")]
+        public DateTime JoinDate { get; init; }
 
-        public DateTime JoinDate => _joinDate;
+        [JsonProperty("steamID64")]
+        public long SteamId64 { get; init; }
 
-        public long SteamId64 => _steamId64;
+        [JsonProperty("steamID")]
+        public string SteamId { get; init; }
 
-        public string SteamId => _steamId;
+        [JsonProperty("discordSnowflake")]
+        public string DiscordSnowflake { get; init; }
 
-        public string DiscordSnowflake => _discordSnowflake;
+        [JsonProperty("groupName")]
+        public string GroupName { get; init; }
 
-        public string GroupName => _groupName;
+        [JsonProperty("groupColor")]
+        public string GroupColor { get; init; }
 
-        public string GroupColor => _groupColor;
+        [JsonProperty("groupID")]
+        public int GroupId { get; init; }
 
-        public int GroupId => _groupId;
+        [JsonProperty("banned")]
+        public bool Banned { get; init; }
 
-        public bool Banned => _banned;
+        [JsonProperty("bannedUntil")]
+        public DateTime? BannedUntil { get; init; }
 
-        public DateTime? BannedUntil => _bannedUntil;
+        [JsonProperty("bansCount")]
+        public int? BansCount { get; init; }
 
-        public int? BansCount => _bansCount;
+        [JsonProperty("displayBans")]
+        public bool DisplayBans { get; init; }
 
-        public bool DisplayBans => _displayBans;
+        [JsonProperty("patreon")]
+        public Patreon Patreon { get; init; }
 
-        public Patreon Patreon => _patreon;
+        [JsonProperty("permissions")]
+        public Permissions Permissions { get; init; }
 
-        public Permissions Permissions => _permissions;
-
-        public PlayerVTCInfo VTC => _vtc;
+        [JsonProperty("vtc")]
+        public PlayerVTCInfo VTC { get; init; }
     }
 }

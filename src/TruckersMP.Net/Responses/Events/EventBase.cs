@@ -6,67 +6,64 @@ namespace TruckersMP.Net
 {
     public class EventBase
     {
-        [JsonProperty("id")] private readonly int _id;
-        [JsonProperty("event_type")] private readonly EventType _eventType;
-        [JsonProperty("name")] private readonly string _name;
-        [JsonProperty("slug")] private readonly string _slug;
-        [JsonProperty("game")] private readonly string _game;
-        [JsonProperty("server")] private readonly ServerSimple _server;
-        [JsonProperty("language")] private readonly string _language;
-        [JsonProperty("departure")] private readonly Place _departure;
-        [JsonProperty("arrive")] private readonly Place _arrive;
-        [JsonProperty("start_at")] private readonly DateTime _startAt;
-        [JsonProperty("banner")] private readonly string _banner;
-        [JsonProperty("map")] private readonly string _map;
-        [JsonProperty("description")] private readonly string _description;
-        [JsonProperty("rule")] private readonly string _rule;
-        [JsonProperty("voice_link")] private readonly string _voiceLink;
-        [JsonProperty("external_link")] private readonly string _externalLink;
-        [JsonProperty("featured")] private readonly string _featured;
-        [JsonProperty("vtc")] private readonly EventVTCInfo _vtc;
-        [JsonProperty("user")] private readonly User _user;
         [JsonProperty("dlcs")] private readonly object _dlcResult;
-        [JsonProperty("url")] private readonly string _url;
-        [JsonProperty("created_at")] private readonly DateTime _createdAt;
-        [JsonProperty("updated_at")] private readonly DateTime _updatedAt;
 
-        public int Id => _id;
+        [JsonProperty("id")]
+        public int Id { get; init; }
 
-        public EventType EventType => _eventType;
+        [JsonProperty("event_type")]
+        public EventType EventType { get; init; }
 
-        public string Name => _name;
+        [JsonProperty("name")]
+        public string Name { get; init; }
 
-        public string Slug => _slug;
+        [JsonProperty("slug")]
+        public string Slug { get; init; }
 
-        public string Game => _game;
+        [JsonProperty("game")]
+        public string Game { get; init; }
 
-        public ServerSimple Server => _server;
+        [JsonProperty("server")]
+        public ServerSimple Server { get; init; }
 
-        public string Language => _language;
+        [JsonProperty("language")]
+        public string Language { get; init; }
 
-        public Place Departure => _departure;
+        [JsonProperty("departure")]
+        public Place Departure { get; init; }
 
-        public Place Arrive => _arrive;
+        [JsonProperty("arrive")]
+        public Place Arrive { get; init; }
 
-        public DateTime StartAt => _startAt;
+        [JsonProperty("start_at")]
+        public DateTime StartAt { get; init; }
 
-        public string Banner => _banner;
+        [JsonProperty("banner")]
+        public string Banner { get; init; }
 
-        public string Map => _map;
+        [JsonProperty("map")]
+        public string Map { get; init; }
 
-        public string Description => _description;
+        [JsonProperty("description")]
+        public string Description { get; init; }
 
-        public string Rule => _rule;
+        [JsonProperty("rule")]
+        public string Rule { get; init; }
 
-        public string VoiceLink => _voiceLink;
+        [JsonProperty("voice_link")]
+        public string VoiceLink { get; init; }
 
-        public string ExternalLink => _externalLink;
+        [JsonProperty("external_link")]
+        public string ExternalLink { get; init; }
 
-        public string Featured => _featured;
+        [JsonProperty("featured")]
+        public string Featured { get; init; }
 
-        public EventVTCInfo Vtc => _vtc;
+        [JsonProperty("vtc")]
+        public EventVTCInfo Vtc { get; init; }
 
-        public User User => _user;
+        [JsonProperty("user")]
+        public User User { get; init; }
 
         [JsonIgnore]
         public Dictionary<string, string> DLCs
@@ -85,10 +82,13 @@ namespace TruckersMP.Net
             }
         }
 
-        public string Url => _url;
+        [JsonProperty("url")]
+        public string Url { get; init; }
 
-        public DateTime CreatedAt => _createdAt;
+        [JsonProperty("created_at")]
+        public DateTime CreatedAt { get; init; }
 
-        public DateTime UpdatedAt => _updatedAt;
+        [JsonProperty("updated_at")]
+        public DateTime UpdatedAt { get; init; }
     }
 }

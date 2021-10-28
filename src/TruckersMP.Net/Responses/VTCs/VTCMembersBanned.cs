@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TruckersMP.Net
 {
@@ -8,13 +9,9 @@ namespace TruckersMP.Net
     public class VTCMembersBanned
     {
         [JsonProperty("members")]
-        private readonly Member[] _members;
+        public IReadOnlyCollection<Member> Members { get; init; }
 
         [JsonProperty("members_banned_count")]
-        private readonly int _membersBannedCount;
-
-        public Member[] Members => _members;
-
-        public int MembersBannedCount => _membersBannedCount;
+        public int MembersBannedCount { get; init; }
     }
 }

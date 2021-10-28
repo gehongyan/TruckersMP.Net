@@ -4,71 +4,70 @@ namespace TruckersMP.Net
 {
     public class Server
     {
-        [JsonProperty("id")] private readonly int _id;
-        [JsonProperty("game")] private readonly string _game;
-        [JsonProperty("ip")] private readonly string _ip;
-        [JsonProperty("port")] private readonly int _port;
-        [JsonProperty("name")] private readonly string _name;
-        [JsonProperty("shortname")] private readonly string _shortName;
-        [JsonProperty("idprefix")] private readonly object _idPrefix;
-        [JsonProperty("online")] private readonly bool _online;
-        [JsonProperty("players")] private readonly int _players;
-        [JsonProperty("queue")] private readonly int _queue;
-        [JsonProperty("maxplayers")] private readonly int _maxPlayers;
-        [JsonProperty("mapid")] private readonly int _mapId;
-        [JsonProperty("displayorder")] private readonly int _displayOrder;
-        [JsonProperty("speedlimiter")] private readonly int _speedLimiter;
-        [JsonProperty("collisions")] private readonly bool _collisions;
-        [JsonProperty("carsforplayers")] private readonly bool _carsForPlayers;
-        [JsonProperty("policecarsforplayers")] private readonly bool _policeCarsForPlayers;
-        [JsonProperty("afkenabled")] private readonly bool _afkEnabled;
-        [JsonProperty("_event")] private readonly bool _event;
-        [JsonProperty("specialEvent")] private readonly bool _specialEvent;
-        [JsonProperty("promods")] private readonly bool _proMods;
-        [JsonProperty("syncdelay")] private readonly int _syncDelay;
+        [JsonProperty("id")]
+        public int Id { get; init; }
 
-        public int Id => _id;
+        [JsonProperty("game")]
+        public string Game { get; init; }
 
-        public string Game => _game;
+        [JsonProperty("ip")]
+        public string Ip { get; init; }
 
-        public string Ip => _ip;
+        [JsonProperty("port")]
+        public int Port { get; init; }
 
-        public int Port => _port;
+        [JsonProperty("name")]
+        public string Name { get; init; }
 
-        public string Name => _name;
+        [JsonProperty("shortname")]
+        public string ShortName { get; init; }
 
-        public string ShortName => _shortName;
+        [JsonProperty("idprefix")]
+        public object IdPrefix { get; init; }
 
-        public object IdPrefix => _idPrefix;
+        [JsonProperty("online")]
+        public bool Online { get; init; }
 
-        public bool Online => _online;
+        [JsonProperty("players")]
+        public int Players { get; init; }
 
-        public int Players => _players;
+        [JsonProperty("queue")]
+        public int Queue { get; init; }
 
-        public int Queue => _queue;
+        [JsonProperty("maxplayers")]
+        public int MaxPlayers { get; init; }
 
-        public int MaxPlayers => _maxPlayers;
+        [JsonProperty("mapid")]
+        public int MapId { get; init; }
 
-        public int MapId => _mapId;
+        [JsonProperty("displayorder")]
+        public int DisplayOrder { get; init; }
 
-        public int DisplayOrder => _displayOrder;
+        [JsonProperty("speedlimiter")]
+        public int SpeedLimiter { get; init; }
 
-        public int SpeedLimiter => _speedLimiter;
+        [JsonProperty("collisions")]
+        public bool Collisions { get; init; }
 
-        public bool Collisions => _collisions;
+        [JsonProperty("carsforplayers")]
+        public bool CarsForPlayers { get; init; }
 
-        public bool CarsForPlayers => _carsForPlayers;
+        [JsonProperty("policecarsforplayers")]
+        public bool PoliceCarsForPlayers { get; init; }
 
-        public bool PoliceCarsForPlayers => _policeCarsForPlayers;
+        [JsonProperty("afkenabled")]
+        public bool AfkEnabled { get; init; }
 
-        public bool AfkEnabled => _afkEnabled;
+        [JsonProperty("_event")]
+        public bool Event { get; init; }
 
-        public bool Event => _event;
+        [JsonProperty("specialEvent")]
+        public bool SpecialEvent { get; init; }
 
-        public bool SpecialEvent => _specialEvent;
+        [JsonProperty("promods")]
+        public bool ProMods { get; init; }
 
-        public bool ProMods => _proMods;
-
-        public int SyncDelay => _syncDelay;
+        [JsonProperty("syncdelay")]
+        public int SyncDelay { get; init; }
     }
 }

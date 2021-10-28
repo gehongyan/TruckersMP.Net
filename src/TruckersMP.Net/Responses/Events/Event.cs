@@ -4,7 +4,7 @@ namespace TruckersMP.Net
 {
     public class Event : EventBase
     {
-        [JsonProperty("attendances")] private readonly Attendances _attendances;
-        public Attendances Attendances => _attendances;
+        [JsonProperty("attendances")]
+        public Attendances Attendances { get; init; }
     }
 }

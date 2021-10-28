@@ -5,23 +5,22 @@ namespace TruckersMP.Net
 {
     public class Ban
     {
-        [JsonProperty("expiration")] private readonly DateTime? _expiration;
-        [JsonProperty("timeAdded")] private readonly DateTime _timeAdded;
-        [JsonProperty("active")] private readonly bool _active;
-        [JsonProperty("reason")] private readonly string _reason;
-        [JsonProperty("adminName")] private readonly string _adminName;
-        [JsonProperty("adminID")] private readonly int _adminId;
+        [JsonProperty("expiration")]
+        public DateTime? Expiration { get; init; }
 
-        public DateTime? Expiration => _expiration;
+        [JsonProperty("timeAdded")]
+        public DateTime TimeAdded { get; init; }
 
-        public DateTime TimeAdded => _timeAdded;
+        [JsonProperty("active")]
+        public bool Active { get; init; }
 
-        public bool Active => _active;
+        [JsonProperty("reason")]
+        public string Reason { get; init; }
 
-        public string Reason => _reason;
+        [JsonProperty("adminName")]
+        public string AdminName { get; init; }
 
-        public string AdminName => _adminName;
-
-        public int AdminId => _adminId;
+        [JsonProperty("adminID")]
+        public int AdminId { get; init; }
     }
 }

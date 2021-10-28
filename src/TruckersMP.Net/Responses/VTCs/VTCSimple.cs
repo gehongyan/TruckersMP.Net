@@ -5,78 +5,48 @@ namespace TruckersMP.Net
     public class VTCSimple
     {
         [JsonProperty("id")]
-        private int _id;
+        public int Id { get; init; }
 
         [JsonProperty("name")]
-        private string _name;
+        public string Name { get; init; }
 
         [JsonProperty("owner_id")]
-        private int _ownerId;
+        public int OwnerId { get; init; }
 
         [JsonProperty("owner_username")]
-        private string _ownerUsername;
+        public string OwnerUsername { get; init; }
 
         [JsonProperty("slogan")]
-        private string _slogan;
+        public string Slogan { get; init; }
 
         [JsonProperty("tag")]
-        private string _tag;
+        public string Tag { get; init; }
 
         [JsonProperty("website")]
-        private string _website;
+        public string Website { get; init; }
 
         [JsonProperty("socials")]
-        private Socials _socials;
+        public Socials Socials { get; init; }
 
         [JsonProperty("games")]
-        private Games _games;
+        public Games Games { get; init; }
 
         [JsonProperty("members_count")]
-        private int _membersCount;
+        public int MembersCount { get; init; }
 
         [JsonProperty("recruitment")]
-        private string _recruitment;
+        public string Recruitment { get; init; }
 
         [JsonProperty("language")]
-        private string _language;
+        public string Language { get; init; }
 
         [JsonProperty("verified")]
-        private bool _verified;
+        public bool Verified { get; init; }
 
         [JsonProperty("validated")]
-        private bool _validated;
+        public bool Validated { get; init; }
 
         [JsonProperty("created")]
-        private string _created;
-
-        public int Id => _id;
-
-        public string Name => _name;
-
-        public int OwnerId => _ownerId;
-
-        public string OwnerUsername => _ownerUsername;
-
-        public string Slogan => _slogan;
-
-        public string Tag => _tag;
-
-        public string Website => _website;
-
-        public Socials Socials => _socials;
-
-        public Games Games => _games;
-
-        public int MembersCount => _membersCount;
-
-        public string Recruitment => _recruitment;
-
-        public string Language => _language;
-
-        public bool Verified => _verified;
-
-        public bool Validated => _validated;
-
-        public string Created => _created;
+        public string Created { get; init; }
     }
 }

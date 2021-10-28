@@ -4,11 +4,10 @@ namespace TruckersMP.Net
 {
     public class AttendancesSimple
     {
-        [JsonProperty("confirmed")] private readonly int _confirmed;
-        [JsonProperty("unsure")] private readonly int _unsure;
+        [JsonProperty("confirmed")]
+        public int Confirmed { get; init; }
 
-        public int Confirmed => _confirmed;
-
-        public int Unsure => _unsure;
+        [JsonProperty("unsure")]
+        public int Unsure { get; init; }
     }
 }

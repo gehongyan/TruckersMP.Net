@@ -5,103 +5,63 @@ namespace TruckersMP.Net
     public class VTC
     {
         [JsonProperty("id")]
-        private readonly int _id;
+        public int Id { get; init; }
 
         [JsonProperty("name")]
-        private readonly string _name;
+        public string Name { get; init; }
 
         [JsonProperty("owner_id")]
-        private readonly int _ownerId;
+        public int OwnerId { get; init; }
 
         [JsonProperty("owner_username")]
-        private readonly string _ownerUsername;
+        public string OwnerUsername { get; init; }
 
         [JsonProperty("slogan")]
-        private readonly string _slogan;
+        public string Slogan { get; init; }
 
         [JsonProperty("tag")]
-        private readonly string _tag;
+        public string Tag { get; init; }
 
         [JsonProperty("logo")]
-        private readonly string _logo;
+        public string Logo { get; init; }
 
         [JsonProperty("cover")]
-        private readonly string _cover;
+        public string Cover { get; init; }
 
         [JsonProperty("information")]
-        private readonly string _information;
+        public string Information { get; init; }
 
         [JsonProperty("rules")]
-        private readonly string _rules;
+        public string Rules { get; init; }
 
         [JsonProperty("requirements")]
-        private readonly string _requirements;
+        public string Requirements { get; init; }
 
         [JsonProperty("website")]
-        private readonly string _website;
+        public string Website { get; init; }
 
         [JsonProperty("socials")]
-        private readonly Socials _socials;
+        public Socials Socials { get; init; }
 
         [JsonProperty("games")]
-        private readonly Games _games;
+        public Games Games { get; init; }
 
         [JsonProperty("members_count")]
-        private readonly int _membersCount;
+        public int MembersCount { get; init; }
 
         [JsonProperty("recruitment")]
-        private readonly string _recruitment;
+        public string Recruitment { get; init; }
 
         [JsonProperty("language")]
-        private readonly string _language;
+        public string Language { get; init; }
 
         [JsonProperty("verified")]
-        private readonly bool _verified;
+        public bool Verified { get; init; }
 
         [JsonProperty("validated")]
-        private readonly bool _validated;
+        public bool Validated { get; init; }
 
         [JsonProperty("created")]
-        private readonly string _created;
-
-        public int Id => _id;
-
-        public string Name => _name;
-
-        public int OwnerId => _ownerId;
-
-        public string OwnerUsername => _ownerUsername;
-
-        public string Slogan => _slogan;
-
-        public string Tag => _tag;
-
-        public string Logo => _logo;
-
-        public string Cover => _cover;
-
-        public string Information => _information;
-
-        public string Rules => _rules;
-
-        public string Requirements => _requirements;
-
-        public string Website => _website;
-
-        public Socials Socials => _socials;
-
-        public Games Games => _games;
-
-        public int MembersCount => _membersCount;
-
-        public string Recruitment => _recruitment;
-
-        public string Language => _language;
-
-        public bool Verified => _verified;
-
-        public bool Validated => _validated;
-
-        public string Created => _created;
+        public string Created { get; init; }
     }
 }

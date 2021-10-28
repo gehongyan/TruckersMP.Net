@@ -6,38 +6,24 @@ namespace TruckersMP.Net
     public class Member
     {
         [JsonProperty("id")]
-        private readonly int _id;
+        public int Id { get; init; }
 
         [JsonProperty("user_id")]
-        private readonly int _userId;
+        public int UserId { get; init; }
 
         [JsonProperty("username")]
-        private readonly string _username;
+        public string Username { get; init; }
 
         [JsonProperty("steam_id")]
-        private readonly long _steamId;
+        public long SteamId { get; init; }
 
         [JsonProperty("role_id")]
-        private readonly int _roleId;
+        public int RoleId { get; init; }
 
         [JsonProperty("role")]
-        private readonly string _role;
+        public string Role { get; init; }
 
         [JsonProperty("joinDate")]
-        private readonly DateTime _joinDate;
-
-        public int Id => _id;
-
-        public int UserId => _userId;
-
-        public string Username => _username;
-
-        public long SteamId => _steamId;
-
-        public int RoleId => _roleId;
-
-        public string Role => _role;
-
-        public DateTime JoinDate => _joinDate;
+        public DateTime JoinDate { get; init; }
     }
 }

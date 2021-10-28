@@ -4,29 +4,28 @@ namespace TruckersMP.Net
 {
     public class Patreon
     {
-        [JsonProperty("isPatron")] private readonly bool _isPatron;
-        [JsonProperty("active")] private readonly bool _active;
-        [JsonProperty("color")] private readonly string _color;
-        [JsonProperty("tierId")] private readonly int? _tierId;
-        [JsonProperty("currentPledge")] private readonly int? _currentPledge;
-        [JsonProperty("lifetimePledge")] private readonly int? _lifetimePledge;
-        [JsonProperty("nextPledge")] private readonly int? _nextPledge;
-        [JsonProperty("hidden")] private readonly bool? _hidden;
+        [JsonProperty("isPatron")]
+        public bool IsPatron { get; init; }
 
-        public bool IsPatron => _isPatron;
+        [JsonProperty("active")]
+        public bool Active { get; init; }
 
-        public bool Active => _active;
+        [JsonProperty("color")]
+        public string Color { get; init; }
 
-        public string Color => _color;
+        [JsonProperty("tierId")]
+        public int? TierId { get; init; }
 
-        public int? TierId => _tierId;
+        [JsonProperty("currentPledge")]
+        public int? CurrentPledge { get; init; }
 
-        public int? CurrentPledge => _currentPledge;
+        [JsonProperty("lifetimePledge")]
+        public int? LifetimePledge { get; init; }
 
-        public int? LifetimePledge => _lifetimePledge;
+        [JsonProperty("nextPledge")]
+        public int? NextPledge { get; init; }
 
-        public int? NextPledge => _nextPledge;
-
-        public bool? Hidden => _hidden;
+        [JsonProperty("hidden")]
+        public bool? Hidden { get; init; }
     }
 }

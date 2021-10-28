@@ -4,20 +4,19 @@ namespace TruckersMP.Net
 {
     public class PlayerVTCInfo
     {
-        [JsonProperty("id")] private readonly int _id;
-        [JsonProperty("name")] private readonly string _name;
-        [JsonProperty("tag")] private readonly string _tag;
-        [JsonProperty("inVTC")] private readonly bool _inVtc;
-        [JsonProperty("memberID")] private readonly int _memberId;
+        [JsonProperty("id")]
+        public int Id { get; init; }
 
-        public int Id => _id;
+        [JsonProperty("name")]
+        public string Name { get; init; }
 
-        public string Name => _name;
+        [JsonProperty("tag")]
+        public string Tag { get; init; }
 
-        public string Tag => _tag;
+        [JsonProperty("inVTC")]
+        public bool InVtc { get; init; }
 
-        public bool InVtc => _inVtc;
-
-        public int MemberId => _memberId;
+        [JsonProperty("memberID")]
+        public int MemberId { get; init; }
     }
 }

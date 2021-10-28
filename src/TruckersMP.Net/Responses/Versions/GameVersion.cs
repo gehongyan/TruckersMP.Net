@@ -6,56 +6,36 @@ namespace TruckersMP.Net
     public class GameVersion
     {
         [JsonProperty("name")]
-        private readonly string _name;
+        public string Name { get; init; }
 
         [JsonProperty("numeric")]
-        private readonly string _numeric;
+        public string Numeric { get; init; }
 
         [JsonProperty("stage")]
-        private readonly string _stage;
+        public string Stage { get; init; }
 
         [JsonProperty("ets2mp_checksum")]
-        private readonly Checksum _ets2MPChecksum;
+        public Checksum ETS2MPChecksum { get; init; }
 
         [JsonProperty("atsmp_checksum")]
-        private readonly Checksum _atsmpChecksum;
+        public Checksum ATSMPChecksum { get; init; }
 
         [JsonProperty("time")]
-        private readonly DateTime _time;
+        public DateTime Time { get; init; }
 
         [JsonProperty("supported_game_version")]
-        private readonly string _supportedGameVersion;
+        public string SupportedGameVersion { get; init; }
 
         [JsonProperty("supported_ats_game_version")]
-        private readonly string _supportedAtsGameVersion;
-
-        public string Name => _name;
-
-        public string Numeric => _numeric;
-
-        public string Stage => _stage;
-
-        public Checksum ETS2MPChecksum => _ets2MPChecksum;
-
-        public Checksum ATSMPChecksum => _atsmpChecksum;
-
-        public DateTime Time => _time;
-
-        public string SupportedGameVersion => _supportedGameVersion;
-
-        public string SupportedAtsGameVersion => _supportedAtsGameVersion;
+        public string SupportedAtsGameVersion { get; init; }
     }
 
     public class Checksum
     {
         [JsonProperty("dll")]
-        private readonly string _dll;
+        public string Dll { get; init; }
 
         [JsonProperty("adb")]
-        private readonly string _adb;
-
-        public string Dll => _dll;
-
-        public string Adb => _adb;
+        public string Adb { get; init; }
     }
 }

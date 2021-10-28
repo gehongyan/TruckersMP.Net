@@ -4,17 +4,16 @@ namespace TruckersMP.Net
 {
     public class Permissions
     {
-        [JsonProperty("isStaff")] private readonly bool _isStaff;
-        [JsonProperty("isUpperStaff")] private readonly bool _isUpperStaff;
-        [JsonProperty("isGameAdmin")] private readonly bool _isGameAdmin;
-        [JsonProperty("showDetailedOnWebMaps")] private readonly bool _showDetailedOnWebMaps;
+        [JsonProperty("isStaff")]
+        public bool IsStaff { get; init; }
 
-        public bool IsStaff => _isStaff;
+        [JsonProperty("isUpperStaff")]
+        public bool IsUpperStaff { get; init; }
 
-        public bool IsUpperStaff => _isUpperStaff;
+        [JsonProperty("isGameAdmin")]
+        public bool IsGameAdmin { get; init; }
 
-        public bool IsGameAdmin => _isGameAdmin;
-
-        public bool ShowDetailedOnWebMaps => _showDetailedOnWebMaps;
+        [JsonProperty("showDetailedOnWebMaps")]
+        public bool ShowDetailedOnWebMaps { get; init; }
     }
 }

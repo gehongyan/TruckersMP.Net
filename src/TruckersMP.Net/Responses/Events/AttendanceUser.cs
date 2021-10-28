@@ -5,14 +5,13 @@ namespace TruckersMP.Net
 {
     public class AttendanceUser : User
     {
-        [JsonProperty("following")] private readonly bool _following;
-        [JsonProperty("created_at")] private readonly DateTime _createdAt;
-        [JsonProperty("updated_at")] private readonly DateTime _updatedAt;
+        [JsonProperty("following")]
+        public bool Following { get; init; }
 
-        public bool Following => _following;
+        [JsonProperty("created_at")]
+        public DateTime CreatedAt { get; init; }
 
-        public DateTime CreatedAt => _createdAt;
-
-        public DateTime UpdatedAt => _updatedAt;
+        [JsonProperty("updated_at")]
+        public DateTime UpdatedAt { get; init; }
     }
 }

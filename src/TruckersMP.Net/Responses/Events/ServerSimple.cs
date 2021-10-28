@@ -4,11 +4,10 @@ namespace TruckersMP.Net
 {
     public class ServerSimple
     {
-        [JsonProperty("id")] private readonly int _id;
-        [JsonProperty("name")] private readonly string _name;
+        [JsonProperty("id")]
+        public int Id { get; init; }
 
-        public int Id => _id;
-
-        public string Name => _name;
+        [JsonProperty("name")]
+        public string Name { get; init; }
     }
 }

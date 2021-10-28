@@ -94,8 +94,8 @@ namespace GeneralTest
             Event response = await @event.SendAsync(4535);
             Assert.NotNull(response);
 
-            Assert.Equal(response.Attendances.Confirmed, response.Attendances.ConfirmedUsers.Length);
-            Assert.Equal(response.Attendances.Unsure, response.Attendances.UnsureUsers.Length);
+            Assert.Equal(response.Attendances.Confirmed, response.Attendances.ConfirmedUsers.Count);
+            Assert.Equal(response.Attendances.Unsure, response.Attendances.UnsureUsers.Count);
         }
 
         [Fact]
@@ -231,7 +231,7 @@ namespace GeneralTest
             response = await vtcMembers.SendAsync("snail-transport");
             Assert.NotNull(response);
 
-            Assert.Equal(response.MembersCount, response.Members.Length);
+            Assert.Equal(response.MembersCount, response.Members.Count);
 
             bool isError = false;
             try
@@ -256,7 +256,7 @@ namespace GeneralTest
             response = await vtcMembers.SendAsync(7);
             Assert.NotNull(response);
 
-            Assert.Equal(response.MembersBannedCount, response.Members.Length);
+            Assert.Equal(response.MembersBannedCount, response.Members.Count);
 
             bool isError = false;
             try
@@ -327,8 +327,8 @@ namespace GeneralTest
             response = await @event.SendAsync("snail-transport", 4494);
             Assert.NotNull(response);
 
-            Assert.Equal(response.Attendances.Confirmed, response.Attendances.ConfirmedUsers.Length);
-            Assert.Equal(response.Attendances.Unsure, response.Attendances.UnsureUsers.Length);
+            Assert.Equal(response.Attendances.Confirmed, response.Attendances.ConfirmedUsers.Count);
+            Assert.Equal(response.Attendances.Unsure, response.Attendances.UnsureUsers.Count);
 
             bool isError = false;
             try

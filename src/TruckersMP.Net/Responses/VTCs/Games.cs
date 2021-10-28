@@ -5,13 +5,9 @@ namespace TruckersMP.Net
     public class Games
     {
         [JsonProperty("ats")]
-        private bool _ats;
+        public bool Ats { get; init; }
 
         [JsonProperty("ets")]
-        private bool _ets;
-
-        public bool Ats => _ats;
-
-        public bool Ets => _ets;
+        public bool Ets { get; init; }
     }
 }

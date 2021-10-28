@@ -6,33 +6,21 @@ namespace TruckersMP.Net
     public class Role
     {
         [JsonProperty("id")]
-        private readonly int _id;
+        public int Id { get; init; }
 
         [JsonProperty("name")]
-        private readonly string _name;
+        public string Name { get; init; }
 
         [JsonProperty("order")]
-        private readonly int _order;
+        public int Order { get; init; }
 
         [JsonProperty("owner")]
-        private readonly bool _owner;
+        public bool Owner { get; init; }
 
         [JsonProperty("created_at")]
-        private readonly DateTime _createdAt;
+        public DateTime CreatedAt { get; init; }
 
         [JsonProperty("updated_at")]
-        private readonly DateTime _updatedAt;
-
-        public int Id => _id;
-
-        public string Name => _name;
-
-        public int Order => _order;
-
-        public bool Owner => _owner;
-
-        public DateTime CreatedAt => _createdAt;
-
-        public DateTime UpdatedAt => _updatedAt;
+        public DateTime UpdatedAt { get; init; }
     }
 }
