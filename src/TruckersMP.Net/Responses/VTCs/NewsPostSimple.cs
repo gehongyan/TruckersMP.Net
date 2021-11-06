@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace TruckersMP.Net
 {
@@ -21,5 +22,11 @@ namespace TruckersMP.Net
 
         [JsonProperty("pinned")]
         public bool Pinned { get; init; }
+
+        [JsonProperty("updated_at")]
+        public DateTime UpdatedAt { get; init; }
+
+        [JsonProperty("published_at")]
+        public DateTime PublishedAt { get; init; }
     }
 }

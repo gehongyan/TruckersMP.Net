@@ -5,7 +5,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>gehongyan</Authors>
     <Company />
     <Product />
@@ -13,9 +13,10 @@
     <PackageProjectUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</PackageProjectUrl>
     <RepositoryUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Added VTC Members Banned API Support</PackageReleaseNotes>
+    <PackageReleaseNotes>Added DateTime support to the VTC news endpoint</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageVersion>1.0.3</PackageVersion>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
