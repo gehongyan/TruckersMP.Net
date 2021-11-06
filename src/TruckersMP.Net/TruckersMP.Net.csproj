@@ -10,12 +10,12 @@
     <Company />
     <Product />
     <Description>A simple C# .NET TruckersMP API implementation https://stats.truckersmp.com/api</Description>
-    <PackageProjectUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/gehongyan/TruckersMP-API-DotNet-Client</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/gehongyan/TruckersMP.Net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/gehongyan/TruckersMP.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Added DateTime support to the VTC news endpoint</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.0.4</PackageVersion>
     <AssemblyVersion>1.0.4.0</AssemblyVersion>
   </PropertyGroup>
 
