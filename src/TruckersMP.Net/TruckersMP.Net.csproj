@@ -4,7 +4,6 @@
     <TargetFramework>net5.0</TargetFramework>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.4</Version>
     <Authors>gehongyan</Authors>
     <Company />
