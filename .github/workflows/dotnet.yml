@@ -1,4 +1,4 @@
-name: dotnetTest
+name: TruckersMP.Net Deploy
 
 on:
   push:
@@ -13,18 +13,31 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+    
     - name: Restore dependencies
       run: dotnet restore src
+    
     - name: Build
       run: dotnet build src --no-restore
+    
     - name: Test
       run: dotnet test src --no-build --verbosity normal
-    - name: Publish NuGet
-      uses: brandedoutcast/publish-nuget@v2.5.2
+
+    - name: Publish to NuGet
+      uses: brandedoutcast/publish-nuget@v2.5.5
       with:
-          PROJECT_FILE_PATH: src/TruckersMP.Net/TruckersMP.Net.csproj
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        PROJECT_FILE_PATH: src/TruckersMP.Net/TruckersMP.Net.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
+    - name: Generate Packages for Github
+      run: dotnet pack src --configuration Release --output packages
+
+    - name: Publish Packages to Github
+      run: dotnet nuget push ./packages/*.nupkg -k ${GITHUB_TOKEN} -s https://nuget.pkg.github.com/gehongyan/index.json --skip-duplicate
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
