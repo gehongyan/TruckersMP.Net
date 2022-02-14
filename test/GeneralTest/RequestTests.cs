@@ -225,9 +225,6 @@ namespace GeneralTest
         public async Task VTCMembersTest()
         {
             VTCMembersRequest vtcMembers = new();
-            
-            VTCMembers members = await vtcMembers.SendAsync(466);
-            
             VTCMembers response = await vtcMembers.SendAsync(3645);
             Assert.NotNull(response);
 
@@ -246,7 +243,18 @@ namespace GeneralTest
                 isError = true;
             }
             Assert.True(isError);
-
+            
+            
+            isError = false;
+            try
+            {
+                response = await vtcMembers.SendAsync(466);
+            }
+            catch (PrivateMembersException)
+            {
+                isError = true;
+            }
+            Assert.True(isError);
         }
 
         [Fact]
