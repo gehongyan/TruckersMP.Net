@@ -55,20 +55,12 @@ namespace TruckersMP.Net
         {
             TruckersMPEntityResponseBase<TEntity> entity = await SendInternalAsync<TruckersMPEntityResponseBase<TEntity>>().ConfigureAwait(false);
 
-            if (entity is null)
-            {
-                throw new RequestException();
-            }
+            if (entity is null) throw new RequestException();
 
-            if (!entity.Error)
-            {
-                return entity.Response;
-            }
+            if (!entity.Error) return entity.Response;
 
-            if (!string.IsNullOrWhiteSpace(entity.Descriptor))
-            {
-                throw new PageNotFountException();
-            }
+            if (entity.Descriptor == "Page not found") throw new PageNotFountException();
+            if (entity.Descriptor == "PRIVATE_MEMBERS") throw new PrivateMembersException();
 
             throw new RequestException();
         }
