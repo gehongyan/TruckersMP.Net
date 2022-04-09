@@ -129,6 +129,16 @@ namespace TruckersMP.Net
             return await new VTCEventsRequest().SendAsync(vtcSlug).ConfigureAwait(false);
         }
 
+        public static async Task<EventWithSimpleAttendances[]> GetVTCAttendingEventsAsync(int id)
+        {
+            return await new VTCAttendingEventsRequest().SendAsync(id).ConfigureAwait(false);
+        }
+
+        public static async Task<EventWithSimpleAttendances[]> GetVTCAttendingEventsAsync(string vtcSlug)
+        {
+            return await new VTCAttendingEventsRequest().SendAsync(vtcSlug).ConfigureAwait(false);
+        }
+
         public static async Task<Event> GetVTCEventInformationAsync(int vtcId, int memberId)
         {
             return await new VTCEventInformationRequest().SendAsync(vtcId, memberId).ConfigureAwait(false);

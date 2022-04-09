@@ -329,6 +329,28 @@ namespace GeneralTest
         }
 
         [Fact]
+        public async Task VTCAttendingEventsTest()
+        {
+            VTCAttendingEventsRequest vtcAttendingEvents = new();
+            EventWithSimpleAttendances[] response = await vtcAttendingEvents.SendAsync(3645);
+            Assert.NotNull(response);
+
+            response = await vtcAttendingEvents.SendAsync("snail-transport");
+            Assert.NotNull(response);
+
+            bool isError = false;
+            try
+            {
+                response = await vtcAttendingEvents.SendAsync(-1);
+            }
+            catch (PageNotFountException)
+            {
+                isError = true;
+            }
+            Assert.True(isError);
+        }
+
+        [Fact]
         public async Task VTCEventInformationTest()
         {
             VTCEventInformationRequest @event = new();
